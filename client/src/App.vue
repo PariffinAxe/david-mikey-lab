@@ -32,7 +32,6 @@ export default {
 
     eventBus.$on('booking-updated', (id) => {
       let index = this.bookings.findIndex((booking) => booking._id === id)
-      console.log(index);
       this.bookings[index].checked_in = true
     })
 
